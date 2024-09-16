@@ -22,6 +22,9 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      fontFamily: {
+        comic: ['"Comic Sans MS"', 'cursive'],
+      },
     },
   },
   plugins: [],

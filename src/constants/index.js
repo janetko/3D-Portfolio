@@ -22,7 +22,11 @@ import {
   munchies,
   oasis,
   portfolio,
-  disney
+  disney,
+  grad,
+  galapagos,
+  costarica,
+  southafrica
 } from "../assets";
 
 export const navLinks = [
@@ -152,27 +156,26 @@ const experiences = [
   }
 ];
 
-const testimonials = [
+const funfacts = [
   {
-    title: "grad",
-    image: ,
-    text: "I graduated from Cornell University. BS - Interdisciplinary Studies, Concentrating in Computer Science, Food Science, and Biology",
+    title: "Grad",
+    image: grad,
+    text: "Cornell University - BS Interdisciplinary Studies: Concentration in Computer Science, Food Science, and Biology",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "Galapagos",
+    image: galapagos,
+    text: "Field exploration in the Galápagos Islands featuring a sea turle",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "CostaRica",
+    image: costarica,
+    text: "Venturing the hills of Costa Rica",
+  },
+  {
+    title: "SouthAfrica",
+    image: southafrica,
+    text: "Visiting Neslson Mandela's house in Soweto, South Africa",
   },
 ];
 
@@ -230,7 +233,7 @@ const projects = [
   {
     name: "Munchies",
     description:
-      "A mobile iOS application that allows Cornell students to review dining halls.",
+      "A mobile iOS application that allows Cornell students to review dining halls on campus.",
     tags: [
       {
         name: "figma",
@@ -279,4 +282,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, funfacts, projects };

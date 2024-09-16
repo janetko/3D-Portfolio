@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
-import research from "./research.png";
-import teach from "./teach.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+import logo from "./icons/logo.svg";
+import research from "./icons/research.png";
+import teach from "./icons/teach.png";
+import mobile from "./icons/mobile.png";
+import web from "./icons/web.png";
+import github from "./icons/github.png";
+import menu from "./icons/menu.svg";
+import close from "./icons/close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -25,10 +25,17 @@ import cornell from "./company/cornell.png";
 import mamelodi from "./company/mamelodi.png";
 import spa from "./company/spa.png";
 
-import disney from "./disney.png";
-import portfolio from "./portfolio.png";
-import oasis from "./oasis.png";
-import munchies from "./munchies.png";
+import disney from "./projects/disney.png";
+import portfolio from "./projects/portfolio.png";
+import oasis from "./projects/oasis.png";
+import munchies from "./projects/munchies.png";
+
+import costarica from "./funfacts/costarica.png";
+import galapagos from "./funfacts/galapagos.png";
+import grad from "./funfacts/grad.png";
+import southafrica from "./funfacts/southafrica.png";
+
+
 
 export {
   logo,
@@ -58,6 +65,9 @@ export {
   disney,
   portfolio,
   munchies,
-  oasis
-  
+  oasis,
+  costarica,
+  galapagos,
+  grad,
+  southafrica
 };
