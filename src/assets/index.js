@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
+import research from "./research.png";
+import teach from "./teach.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -13,18 +13,17 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import python from "./tech/python.png";
+import postman from "./tech/postman.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import swift from "./tech/swift.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import cornell from "./company/cornell.png";
+import mamelodi from "./company/mamelodi.png";
+import spa from "./company/spa.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -32,8 +31,8 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
-  backend,
-  creator,
+  research,
+  teach,
   mobile,
   web,
   github,
@@ -45,17 +44,16 @@ export {
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
+  python,
+  postman,
   reactjs,
-  redux,
+  swift,
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  cornell,
+  mamelodi,
+  spa,
   carrent,
   jobit,
   tripguide,

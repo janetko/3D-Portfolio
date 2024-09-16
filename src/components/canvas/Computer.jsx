@@ -80,10 +80,8 @@ const Computer = ({isRotating, setIsRotating, ...props}) => {
       }
 
       computerRef.current.rotation.y += rotationSpeed.current;
-    } else {
-      const rotation = computerRef.current.rotation.y;    
     }
-  })
+  });
 
   useEffect(() => {
     const canvas = gl.domElement;
@@ -109,8 +107,8 @@ const Computer = ({isRotating, setIsRotating, ...props}) => {
         <pointLight intensity={1} />
         <spotLight 
           position={[-20, 50, 10]}
-          angle={0.12}
-          penumbra={1}
+          angle={0.18}
+          penumbra={1.5}
           intensity={1}
           castShadow
           shadow-mapSize={1024}
@@ -144,11 +142,11 @@ const ComputerCanvas = () => {
     let screenScale, screenPosition;
   
     if (window.innerWidth < 768) {
-      screenScale = [0.5, 0.5, 0.5];
+      screenScale = [0.3, 0.3, 0.3];
       screenPosition = [2.25, -2.5, 0];
     } else {
       screenScale = [0.5, 0.5, 0.5];
-      screenPosition = [5.5, -1.5, -1.5];
+      screenPosition = [4.2, -2.5, -2.2];
     }
   
     return [screenScale, screenPosition]

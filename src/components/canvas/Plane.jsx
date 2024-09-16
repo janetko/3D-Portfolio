@@ -4,9 +4,9 @@ import planeScene from '/plane.glb'
 import { useAnimations, useGLTF } from '@react-three/drei'
 
 const Plane = ({isRotating, ...props}) => {
-  const ref = useRef();
+  const planeRef = useRef();
   const {scene, animations} = useGLTF(planeScene);
-  const {actions} = useAnimations(animations, ref);
+  const {actions} = useAnimations(animations, planeRef);
 
   useEffect(() => {
     if(isRotating) {
@@ -17,7 +17,7 @@ const Plane = ({isRotating, ...props}) => {
   }, [actions, isRotating])
 
   return (
-    <mesh {...props} ref={ref}>
+    <mesh {...props} ref={planeRef}>
       <primitive object={scene} />
     </mesh>
   )

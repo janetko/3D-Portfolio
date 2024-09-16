@@ -1,28 +1,27 @@
 import {
   mobile,
-  backend,
-  creator,
+  research,
+  teach,
   web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
+  python,
   tailwind,
-  nodejs,
-  mongodb,
+  postman,
+  swift,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  cornell,
+  mamelodi,
+  spa,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  threejs
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +41,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Fullstack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Research & Data Analysis",
+    icon: research,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Teaching & Instruction",
+    icon: teach,
   },
 ];
 
@@ -81,20 +80,20 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Swift",
+    icon: swift,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Postman", 
+    icon: postman,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Python",
+    icon: python,
   },
   {
     name: "Three JS",
@@ -116,57 +115,40 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Developer",
+    company_name: "Systems Planning and Analysis Inc.",
+    icon: spa,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and designing web-based applications for deployment on client SharePoint sites using Typescript, JS Web Components, Bootstrap, C# and related technologies.",
+      "Developing new analytical tools and maintaining modeling and simulation tools",
+      "Collaborating with program managers, technical leads, and the development team to deliver high-visibility software solutions to external customers and internal stakeholders.",
+      "Presenting and training on products and deliverables to both technical and non-technical audiences.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Development Research Assistant",
+    company_name: "Cornell SC Johnson Food Industry Management Program",
+    icon: cornell,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Deciphered and organized undocumented VBA code using Excel to improve the operational decision-making algorithms of Cornell's Supermarket Simulation, which is used annually by 70+ global executives.",
+      "Reprogrammed and enhanced the VBA-based simulation by converting its functionality to Python."
     ],
   },
+  {
+    title: "Mathematics and Programming Instructor",
+    company_name: "The Mamelodi Initiative South Africa",
+    icon: mamelodi,
+    iconBg: "#E6DEDD",
+    date: "Jun 2022 - Jul 2022",
+    points: [
+      "Designed and implemented structured lesson plans tailored to diverse learning styles of high school students. Encouraged student engagement through dynamic class discussions, fostering a collaborative learning environment.",
+      "Enhanced student performance by introducing active learning approaches, providing individualized tutoring, and conducting regular progress assessments. Reinforced key concepts through repetition and tailored support, contributing to a 17% improvement in exam results.",
+    ],
+  }
 ];
 
 const testimonials = [
