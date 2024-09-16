@@ -18,10 +18,11 @@ import {
   cornell,
   mamelodi,
   spa,
-  carrent,
-  jobit,
-  tripguide,
-  threejs
+  threejs,
+  munchies,
+  oasis,
+  portfolio,
+  disney
 } from "../assets";
 
 export const navLinks = [
@@ -100,15 +101,15 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
@@ -153,12 +154,9 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "grad",
+    image: ,
+    text: "I graduated from Cornell University. BS - Interdisciplinary Studies, Concentrating in Computer Science, Food Science, and Biology",
   },
   {
     testimonial:
@@ -180,67 +178,104 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "3D Personal Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based interactive portfolio that showcases my work and background.",
+    tags: [
+      {
+        name: "reactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "blender",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/janetko/3D-Portfolio/",
+  },
+  {
+    name: "Disney Plus Clone",
+    description:
+      "A replica of a popular web-based streaming platform.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: disney,
+    source_code_link: "https://github.com/janetko/disney-plus-clone/",
   },
   {
-    name: "Job IT",
+    name: "Munchies",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A mobile iOS application that allows Cornell students to review dining halls.",
     tags: [
       {
-        name: "react",
+        name: "figma",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "swift",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "uikit",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: munchies,
+    source_code_link: "https://github.com/janetko/munchies-frontend/",
   },
   {
-    name: "Trip Guide",
+    name: "Oasis",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A mobile iOS mental health and wellness application that serves to uplift and connect students at Cornell.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sql-alchemy",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "google-cloud",
         color: "pink-text-gradient",
       },
+      {
+        name: "postman",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: oasis,
+    source_code_link: "https://github.com/janetko/Oasis/tree/Backend/",
   },
 ];
 

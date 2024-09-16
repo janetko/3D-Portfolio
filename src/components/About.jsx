@@ -43,7 +43,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a software engineer with an inquisitive mind that guides everything I do. I've honed a diverse skill set in web and mobile development, working with TypeScript, JavaScript, React, Python, and Swift. Whether building apps or conducting research, I'm always eager to explore new ideas, solve problems, and create innovative solutions. This relentless curiosity drives me to continuously learn, grow, and push boundaries in every project I take on.
+        I'm a software engineer with an inquisitive mind that guides everything I do. I've honed a diverse skill set in web and fullstack development, working with TypeScript, JavaScript, React, Python, and Swift. Whether building apps or conducting research, I'm always eager to explore new ideas, solve problems, and create innovative solutions. This relentless curiosity drives me to continuously learn, grow, and push boundaries in every project I take on.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

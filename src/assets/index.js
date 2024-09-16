@@ -25,9 +25,10 @@ import cornell from "./company/cornell.png";
 import mamelodi from "./company/mamelodi.png";
 import spa from "./company/spa.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import disney from "./disney.png";
+import portfolio from "./portfolio.png";
+import oasis from "./oasis.png";
+import munchies from "./munchies.png";
 
 export {
   logo,
@@ -54,7 +55,9 @@ export {
   cornell,
   mamelodi,
   spa,
-  carrent,
-  jobit,
-  tripguide,
+  disney,
+  portfolio,
+  munchies,
+  oasis
+  
 };

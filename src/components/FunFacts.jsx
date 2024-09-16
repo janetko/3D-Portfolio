@@ -1,9 +1,16 @@
-import React from 'react'
+import { motion } from "framer-motion"
+import { SectionWrapper } from "../hoc"
+import { textVariant } from "../utils/motion"
+import { styles } from "../styles"
 
 const FunFacts = () => {
   return (
-    <div>Fun Facts</div>
+    <>
+      <motion.div variants={textVariant()}>
+          <p className={`${styles.sectionSubText} mb-12`}>A little bit about me</p>
+      </motion.div>
+    </>
   )
 }
 
-export default FunFacts
+export default SectionWrapper(FunFacts, "")
