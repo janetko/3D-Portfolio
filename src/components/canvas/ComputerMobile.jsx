@@ -21,8 +21,8 @@ const Computer = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={ 0.5 }
-        position={[-1, -3.25, -1.5]}
+        scale={ 0.35 }
+        position={[-1, -1.6, -0.9]}
         rotation={[-0.01, -0.2, 0]}
       />
     </mesh>
@@ -31,24 +31,26 @@ const Computer = () => {
 
 const ComputerMobile = () => {
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computer />
-      </Suspense>
+    <div className="w-full h-full relative">
+      <Canvas
+        frameloop='demand'
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computer />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 

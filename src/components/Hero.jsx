@@ -78,7 +78,6 @@ const Hero = () => {
           </div>
       </div>
         {isTabletOrMobile ? <ComputerMobile /> : <ComputerCanvas />}
-
       <div className='hidden sm:flex absolute xs:bottom-5 bottom-32 w-full justify-center items-center'>
         <a href='#about'>
             <ArrowKeysAnimation />
