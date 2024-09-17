@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputerCanvas } from './canvas';
+import { ComputerCanvas, ComputerMobile } from './canvas';
 import { useEffect, useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 const ArrowKeysAnimation = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -60,6 +61,7 @@ const ArrowKeysAnimation = () => {
 
 
 const Hero = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flexrow items-start gap-5`}>
@@ -75,9 +77,9 @@ const Hero = () => {
             </p>
           </div>
       </div>
-      <ComputerCanvas />
+        {isTabletOrMobile ? <ComputerMobile /> : <ComputerCanvas />}
 
-      <div className='absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center'>
+      <div className='hidden sm:flex absolute xs:bottom-5 bottom-32 w-full justify-center items-center'>
         <a href='#about'>
             <ArrowKeysAnimation />
         </a>
