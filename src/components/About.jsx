@@ -34,16 +34,16 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant}>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+        variants={fadeIn('', '', 0.2, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a software engineer with an inquisitive mind that guides everything I do. I've honed a diverse skill set in web and fullstack development, working with TypeScript, JavaScript, React, Python, and Swift. Whether building apps or conducting research, I'm always eager to explore new ideas, solve problems, and create innovative solutions. This relentless curiosity drives me to continuously learn, grow, and push boundaries in every project I take on.
+        I'm a software engineer with an inquisitive mind that guides everything I do. I've honed a diverse skill set in fullstack development, working with TypeScript, JavaScript, React, Python, and Swift, among others. Whether building apps or conducting research, I'm always eager to explore new ideas, solve problems, and create innovative solutions. This relentless curiosity drives me to continuously learn, grow, and push boundaries in every project I take on.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

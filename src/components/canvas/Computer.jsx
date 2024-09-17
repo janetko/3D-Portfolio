@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { Preload, useGLTF } from '@react-three/drei';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Suspense, useEffect, useRef, useState } from 'react';
 import CanvasLoader from '../Loader';
 import Plane from './Plane';
@@ -12,51 +12,15 @@ const Computer = ({isRotating, setIsRotating, ...props}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   const computerRef = useRef();
 
-  const {gl, viewport } = useThree();
-  const lastX = useRef(0);
   const rotationSpeed = useRef(0);
   const dampingFactor = 0.95;
 
-  const handlePointerDown = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    setIsRotating(true);
-
-    const clientX = e.touches
-      ? e.touches[0].clientX
-      : e.clientX;
-
-    lastX.current = clientX;
-  }
-
-  const handlePointerUp = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    setIsRotating(false);
-  }
-
-  const handlePointerMove = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-
-    if (isRotating) {
-      const clientX = e.touches
-        ? e.touches[0].clientX
-        : e.clientX;
-
-      const delta = (clientX - lastX.current) / viewport.width;
-
-      computerRef.current.rotation.y += delta * 0.01 * Math.PI;
-      lastX.current = clientX;
-      rotationSpeed.current = delta * 0.01 * Math.PI;
-    }
-  }
 
   const handleKeyDown = (e) => {
     if (e.key === 'ArrowLeft') {
       if (!isRotating) setIsRotating(true);
       computerRef.current.rotation.y += 0.01 * Math.PI;
-      rotationSpeed.current = 0.0125;
+      rotationSpeed.current = 0.0225;
     } else if (e.key === 'ArrowRight') {
       if (!isRotating) setIsRotating(true);
       computerRef.current.rotation.y -= 0.01 * Math.PI;
@@ -84,21 +48,14 @@ const Computer = ({isRotating, setIsRotating, ...props}) => {
   });
 
   useEffect(() => {
-    const canvas = gl.domElement;
-    canvas.addEventListener('pointerdown', handlePointerDown);
-    canvas.addEventListener('pointerup', handlePointerUp);
-    canvas.addEventListener('pointermove', handlePointerMove);
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
 
     return () => {
-      canvas.removeEventListener('pointerdown', handlePointerDown);
-      canvas.removeEventListener('pointerup', handlePointerUp);
-      canvas.removeEventListener('pointermove', handlePointerMove);
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('keyup', handleKeyUp);
     }
-  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove])
+  }, []);
 
   return (
     <a.group>
@@ -179,9 +136,8 @@ const ComputerCanvas = () => {
 
   return (
     <Canvas
-    camera={{position: [20, 3, 5], fov: 25}}
-    shadows
-      className={`${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
+      camera={{position: [20, 3, 5], fov: 25}}
+      shadows
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computer 

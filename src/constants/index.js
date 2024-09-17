@@ -1,8 +1,8 @@
 import {
   mobile,
-  research,
+  fullstack,
   teach,
-  web,
+  frontend,
   javascript,
   typescript,
   html,
@@ -46,16 +46,16 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Frontend Development",
+    icon: frontend,
+  },
+  {
     title: "Fullstack Development",
-    icon: web,
+    icon: fullstack,
   },
   {
     title: "Mobile App Development",
     icon: mobile,
-  },
-  {
-    title: "Research & Data Analysis",
-    icon: research,
   },
   {
     title: "Teaching & Instruction",
@@ -175,7 +175,7 @@ const funfacts = [
   {
     title: "SouthAfrica",
     image: southafrica,
-    text: "Visiting Neslson Mandela's house in Soweto, South Africa",
+    text: "Visiting Nelson Mandela's home in Soweto, South Africa",
   },
 ];
 

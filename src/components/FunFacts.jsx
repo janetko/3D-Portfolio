@@ -36,9 +36,9 @@ const FunFacts = () => {
   return (
     <>
       <motion.div variants={fadeIn('', '', 0.2)}>
-          <p className={`${styles.sectionSubText} mb-12 text-center`}>A little bit about me</p>
+          <p className={`${styles.sectionSubText} mb-12 text-center`}>Life Outside the Terminal</p>
       </motion.div>
-      <motion.div variants={fadeIn('left', '', 0.3)}>
+      <motion.div variants={fadeIn('', '', 0.3)}>
         <ImgSlider>
           {funfacts.map((funfact) => (
             <FactCard key={funfact.title} {...funfact}/>

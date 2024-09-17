@@ -1,9 +1,12 @@
 import logo from "./icons/logo.svg";
-import research from "./icons/research.png";
+import frontend from "./icons/frontend.png";
 import teach from "./icons/teach.png";
 import mobile from "./icons/mobile.png";
-import web from "./icons/web.png";
+import fullstack from "./icons/fullstack.png";
 import github from "./icons/github.png";
+import github2 from "./icons/github2.png";
+import linkedin from "./icons/linkedin.png";
+import resume from "./icons/resume.png";
 import menu from "./icons/menu.svg";
 import close from "./icons/close.svg";
 
@@ -39,11 +42,14 @@ import southafrica from "./funfacts/southafrica.png";
 
 export {
   logo,
-  research,
+  frontend,
   teach,
   mobile,
-  web,
+  fullstack,
   github,
+  github2,
+  linkedin,
+  resume,
   menu,
   close,
   css,
