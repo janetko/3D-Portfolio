@@ -59,6 +59,25 @@ const ArrowKeysAnimation = () => {
   );
 };
 
+const BouncyDownArrow = () => {
+  return (
+    <a href='#about'>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 1.5,
+          ease: "easeInOut",
+        }}
+        className="text-2xl border rounded-md p-2 border-secondary flex justify-center items-center w-12"
+      >
+        &#8595;
+      </motion.div>
+    </a>
+  );
+};
 
 const Hero = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -78,10 +97,10 @@ const Hero = () => {
           </div>
       </div>
         {isTabletOrMobile ? <ComputerMobile /> : <ComputerCanvas />}
-      <div className='hidden sm:flex absolute xs:bottom-5 bottom-32 w-full justify-center items-center'>
-        <a href='#about'>
-            <ArrowKeysAnimation />
-        </a>
+      <div className='absolute xs:bottom-5 bottom-32 w-full justify-center items-center'>
+        <div className='flex justify-center'>
+            {isTabletOrMobile ? <BouncyDownArrow /> : <ArrowKeysAnimation /> }
+        </div>
       </div>
     </section>
   )
